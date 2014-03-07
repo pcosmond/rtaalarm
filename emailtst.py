@@ -13,7 +13,8 @@ EMAIL_FROM = "RTA Email"
 EMAIL_TO = ["simulator@flighttrainingadelaide.com", "pcosmond@bigpond.com"]
 EMAIL_SPACE = ", "
 EMAIL_SUBJECT = "Alarm Test : "
-DATE_FORMAT = "%d/%m/%Y"
+DATE_FORMAT = "%d/%m/%Y"    
+
 def send_email():         
     msg = MIMEText ("Test Email from RTA")
     msg['To'] = EMAIL_SPACE.join(EMAIL_TO)
